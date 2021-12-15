@@ -1,18 +1,13 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React from 'react';
+import {StyleSheet} from 'react-native';
+import { GetStarted } from './pages';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Welcome App JS</Text>
-    </View>
-  )
-}
+    <GetStarted/>
+  );
+};
 
-export default App
+export default App;
 
-const styles = StyleSheet.create({
-  container: {
-    padding: 50
-  }
-})
+const styles = StyleSheet.create({});
