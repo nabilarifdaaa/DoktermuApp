@@ -1,15 +1,21 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {StyleSheet, Text, View, Dimensions} from 'react-native';
 import {ILSplash} from '../../assets/illustration';
-import { Logo } from '../../components';
+import {Logo} from '../../components';
 
 const win = Dimensions.get('window');
 
-const Splash = () => {
+const Splash = ({navigation}) => {
+  useEffect(() => {
+   setTimeout(()=>{
+    navigation.replace('GetStarted')
+   }, 3000)
+  }, [navigation]);
+
   return (
     <View style={styles.container}>
-      <ILSplash/>
-      <Logo/>
+      <ILSplash />
+      <Logo />
     </View>
   );
 };
