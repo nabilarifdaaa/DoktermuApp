@@ -35,5 +35,6 @@ const styles = StyleSheet.create({
   txtDesc: {
     color: '#727272',
     fontSize: 16,
+    fontFamily: 'Nunito-SemiBold'
   },
 });

@@ -24,6 +24,6 @@ const styles = StyleSheet.create({
   text: (type) => ({
     color: type === 'secondary' ? '#5C9970' : 'white',
     textAlign: 'center',
-    fontWeight: 'bold',
+    fontFamily: 'Nunito-SemiBold'
   }),
 });

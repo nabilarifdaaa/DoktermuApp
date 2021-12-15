@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
   txtLogo: {
     color: '#5C9970',
-    fontWeight: 'bold',
+    fontFamily: 'Nunito-Bold',
     fontSize: 24,
   },
 });
