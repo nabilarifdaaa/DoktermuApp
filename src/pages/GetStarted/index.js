@@ -2,6 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {ILGetStarted} from '../../assets/illustration';
 import { Button, Gap, Logo } from '../../components';
+import { colors } from '../../utils/Colors';
 
 const GetStarted = ({navigation}) => {
   return (
@@ -27,13 +28,13 @@ export default GetStarted;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: colors.white,
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 20
   },
   txtDesc: {
-    color: '#727272',
+    color: colors.text.secondaryGrey,
     fontSize: 16,
     fontFamily: 'Nunito-SemiBold'
   },

@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import { colors } from '../../../utils/Colors';
 
 export default function Logo() {
   return (
@@ -11,14 +12,14 @@ export default function Logo() {
 
 const styles = StyleSheet.create({
   logo: {
-    backgroundColor: '#E0ECE4',
+    backgroundColor: colors.secondary,
     padding: 10,
     borderRadius: 5,
     maxWidth: 131,
     marginBottom: 25,
   },
   txtLogo: {
-    color: '#5C9970',
+    color: colors.text.primaryGreen,
     fontFamily: 'Nunito-Bold',
     fontSize: 24,
   },

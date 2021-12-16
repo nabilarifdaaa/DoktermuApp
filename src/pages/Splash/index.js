@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import {StyleSheet, Text, View, Dimensions} from 'react-native';
 import {ILSplash} from '../../assets/illustration';
 import {Logo} from '../../components';
+import { colors } from '../../utils/Colors';
 
 const win = Dimensions.get('window');
 
@@ -23,29 +24,10 @@ const Splash = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: colors.white,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  gap: {
-    marginBottom: 150,
-  },
-  logo: {
-    backgroundColor: '#E0ECE4',
-    padding: 10,
-    borderRadius: 5,
-    maxWidth: 131,
-    marginBottom: 25,
-  },
-  txtLogo: {
-    color: '#5C9970',
-    fontWeight: 'bold',
-    fontSize: 24,
-  },
-  txtDesc: {
-    color: '#727272',
-    fontSize: 16,
-  },
+  }
 });
 
 export default Splash;

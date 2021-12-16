@@ -4,6 +4,7 @@ import Button from '../../components/atoms/Button'
 import Gap from '../../components/atoms/Gap'
 import Input from '../../components/atoms/Input'
 import Title from '../../components/atoms/Title'
+import { colors } from '../../utils/Colors'
 
 const SignUp = () => {
     return (
@@ -31,13 +32,13 @@ export default SignUp
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'white',
+        backgroundColor: colors.white,
         padding: 50
     },
     line: {
         marginTop: 15,
         borderBottomWidth: 3,
-        borderBottomColor: '#5C9970',
+        borderBottomColor: colors.primary,
         width: '40%'
     }
 })

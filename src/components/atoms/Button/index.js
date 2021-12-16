@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {colors} from '../../../utils/Colors';
 
 const Button = ({type, title, onPress}) => {
   return (
@@ -12,18 +13,24 @@ const Button = ({type, title, onPress}) => {
 export default Button;
 
 const styles = StyleSheet.create({
-  container: (type) => ({
-    backgroundColor: type === 'secondary' ? 'white' : '#5C9970',
-    borderColor:'#5C9970',
+  container: type => ({
+    backgroundColor:
+      type === 'secondary'
+        ? colors.button.secondary.background
+        : colors.button.primary.background,
+    borderColor: colors.button.border,
     borderWidth: 1,
     borderRadius: 5,
     width: '100%',
     height: 35,
     justifyContent: 'center',
   }),
-  text: (type) => ({
-    color: type === 'secondary' ? '#5C9970' : 'white',
+  text: type => ({
+    color:
+      type === 'secondary'
+        ? colors.button.secondary.text
+        : colors.button.primary.text,
     textAlign: 'center',
-    fontFamily: 'Nunito-SemiBold'
+    fontFamily: 'Nunito-SemiBold',
   }),
 });
