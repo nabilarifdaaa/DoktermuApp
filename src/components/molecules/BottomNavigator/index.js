@@ -1,10 +1,11 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
+import { colors } from '../../../utils/Colors';
 import TabItem from '../../atoms/TabItem';
 
 const BottomNavigator = ({state, descriptors, navigation}) => {
   return (
-    <View style={{flexDirection: 'row'}}>
+    <View style={{flexDirection: 'row', backgroundColor: colors.white}}>
       {state.routes.map((route, index) => {
         const {options} = descriptors[route.key];
         const label =

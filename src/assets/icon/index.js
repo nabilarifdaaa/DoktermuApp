@@ -7,6 +7,7 @@ import ICChatActive from './chat-active.svg';
 import ICChat from './chat-inactive.svg';
 import ICHospitalActive from './location-active.svg';
 import ICHospital from './location-inactive.svg';
+import ICStar from './star.png';
 
 export {
   ICBack,
@@ -18,4 +19,5 @@ export {
   ICChat,
   ICHospitalActive,
   ICHospital,
+  ICStar,
 };
