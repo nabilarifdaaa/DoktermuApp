@@ -19,6 +19,8 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    paddingHorizontal: 35,
+    paddingTop: 35
   },
   photo: {
     width: 65,
