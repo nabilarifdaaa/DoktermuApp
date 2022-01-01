@@ -10,7 +10,7 @@ import { Header } from '../../components/molecules';
 const Login = ({navigation}) => {
   return (
     <View style={styles.page}>
-      <Header title='Masuk' onPress={()=>navigation.goBack()}/>
+      <Header hasBack={true} title='Masuk' onPress={()=>navigation.goBack()}/>
       <View style={styles.container}>
         <View style={{alignItems: 'center'}}>
           <ILLogin />

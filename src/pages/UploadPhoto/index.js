@@ -9,7 +9,7 @@ import {colors} from '../../utils/Colors';
 const UploadPhoto = ({navigation}) => {
   return (
     <View style={styles.page}>
-      <Header title="Unggah Foto" onPress={()=>navigation.goBack()}/>
+      <Header hasBack={true} title="Unggah Foto" onPress={()=>navigation.goBack()}/>
         <View style={styles.content}>
           <View style={styles.profile}>
             <View style={styles.avatarWrapper}>

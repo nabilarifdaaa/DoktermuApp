@@ -8,7 +8,7 @@ import {
   Login,
   UploadPhoto,
   Home,
-  Chats,
+  HistoryChat,
   Hospital,
 } from '../pages';
 import { BottomNavigator } from '../components/molecules';
@@ -22,7 +22,7 @@ const MainApp = () => {
       <Tab.Screen name="Beranda" component={Home} options={{headerShown: false}} />
       <Tab.Screen
         name="Pesan"
-        component={Chats}
+        component={HistoryChat}
         options={{headerShown: false}}
       />
       <Tab.Screen

@@ -9,7 +9,7 @@ import {colors} from '../../utils/Colors';
 const SignUp = ({navigation}) => {
   return (
     <View style={styles.page}>
-      <Header title="Daftar" onPress={()=>navigation.goBack()}/>
+      <Header hasBack={true} title="Daftar" onPress={()=>navigation.goBack()}/>
       <View style={styles.container}>
         <View style={styles.line} />
         <Gap height={40} />

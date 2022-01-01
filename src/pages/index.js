@@ -6,5 +6,16 @@ import UploadPhoto from './UploadPhoto';
 import Home from './Home';
 import Chats from './Chats';
 import Hospital from './Hospital';
+import HistoryChat from './HistoryChat';
 
-export {Splash, GetStarted, SignUp, Login, UploadPhoto, Home, Chats, Hospital};
+export {
+  Splash,
+  GetStarted,
+  SignUp,
+  Login,
+  UploadPhoto,
+  Home,
+  Chats,
+  Hospital,
+  HistoryChat,
+};
